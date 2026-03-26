@@ -82,9 +82,10 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={false}
       products={[
-        { id: "p1", name: "Burritos & Rice Boxes", price: "£8.95 - £10.95", variant: "Pulled Beef, Chicken, Pork, Vegan Bean (+Guacamole £1.00)", imageSrc: "http://img.b2bpic.net/free-photo/mexican-meal_23-2148159762.jpg" },
-        { id: "p2", name: "Tacos", price: "£8.95 - £10.95", variant: "Pulled Beef, Chicken, Pork, Vegan Bean (+Guacamole £1.00)", imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-unfolded-burrito_23-2148329128.jpg" },
-        { id: "p3", name: "Quesadilla & Nachos", price: "£7.50", variant: "Add-ons: Chicken/Pork £3.50, Beef £4.00, Bean £2.50, Sour Cream £0.75, Guac £1.00", imageSrc: "http://img.b2bpic.net/free-photo/tacos-plate-near-vegetables_23-2148132045.jpg" },
+        { id: "p1", name: "Burritos & Rice Boxes", price: "£8.95 - £10.95", variant: "Pulled Beef, Chicken, Pork, Vegan Bean, Guacamole", imageSrc: "http://img.b2bpic.net/free-photo/mexican-meal_23-2148159762.jpg" },
+        { id: "p2", name: "Tacos", price: "£8.95 - £10.95", variant: "Pulled Beef, Chicken, Pork, Vegan Bean, Guacamole", imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-unfolded-burrito_23-2148329128.jpg" },
+        { id: "p3", name: "Quesadilla", price: "£7.50", variant: "Base with add-ons: Meats, beans, sour cream, guacamole", imageSrc: "http://img.b2bpic.net/free-photo/tacos-plate-near-vegetables_23-2148132045.jpg" },
+        { id: "p4", name: "Nachos", price: "£7.50", variant: "Base with add-ons: Meats, beans, guacamole", imageSrc: "http://img.b2bpic.net/free-photo/top-view-nachos-plate_23-2148132045.jpg" },
       ]}
       title="Culinary Selection"
       description="Our menu showcases a selection of premium, hand-crafted Mexican classics."
