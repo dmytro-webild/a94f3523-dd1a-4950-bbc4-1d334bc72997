@@ -6,7 +6,7 @@ import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 
@@ -26,7 +26,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleFullscreen
+      <NavbarLayoutFloatingOverlay
       navItems={[
         { name: "Home", id: "hero" },
         { name: "Menu", id: "menu" },
