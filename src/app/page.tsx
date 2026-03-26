@@ -28,22 +28,10 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleFullscreen
       navItems={[
-        {
-          name: "Home",
-          id: "hero",
-        },
-        {
-          name: "Menu",
-          id: "menu",
-        },
-        {
-          name: "Story",
-          id: "about",
-        },
-        {
-          name: "Visit",
-          id: "location",
-        },
+        { name: "Home", id: "hero" },
+        { name: "Menu", id: "menu" },
+        { name: "Story", id: "about" },
+        { name: "Location", id: "metrics" },
       ]}
       brandName="La Cantina"
     />
@@ -51,20 +39,12 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplit
-      background={{
-        variant: "radial-gradient",
-      }}
-      title="The Best Burrito You’ll Ever Taste"
-      description="Fresh. Generous. Made with ingredients that actually matter. Authentic Mexican street food, elevated for Stroud locals."
+      background={{ variant: "radial-gradient" }}
+      title="Luxury Meets Tradition"
+      description="Authentic Mexican street food, refined for the modern palate in Stroud."
       buttons={[
-        {
-          text: "Order Now",
-          href: "#order",
-        },
-        {
-          text: "Find Us",
-          href: "#location",
-        },
+        { text: "View Menu", href: "#menu" },
+        { text: "Our Story", href: "#about" },
       ]}
       imageSrc="http://img.b2bpic.net/free-photo/hands-holding-delicious-tacos_23-2150878335.jpg"
       mediaAnimation="slide-up"
@@ -78,49 +58,19 @@ export default function LandingPage() {
       gridVariant="full-width-top-items-bottom-row"
       useInvertedBackground={false}
       testimonials={[
-        {
-          id: "1",
-          name: "Sarah J.",
-          role: "Loyal Regular",
-          company: "Stroud Local",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-african-woman-walking-outdoors-park_171337-13722.jpg",
-        },
-        {
-          id: "2",
-          name: "Michael T.",
-          role: "Burrito Fan",
-          company: "Foodie",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/authentic-book-club-scene_23-2150104578.jpg",
-        },
-        {
-          id: "3",
-          name: "Emily R.",
-          role: "Vegan",
-          company: "Local",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/expressive-middle-aged-woman-posing_344912-2831.jpg",
-        },
-        {
-          id: "4",
-          name: "David K.",
-          role: "Office Luncher",
-          company: "Stroud",
-          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-woman-with-afro-haircut-with-yellow-headphones_273609-23033.jpg",
-        },
+        { id: "1", name: "Sarah J.", role: "Connoisseur", company: "Stroud Local", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/young-african-woman-walking-outdoors-park_171337-13722.jpg" },
+        { id: "2", name: "Michael T.", role: "Foodie", company: "Stroud", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/authentic-book-club-scene_23-2150104578.jpg" },
       ]}
-      title="Loved by Locals"
-      description="Don't just take our word for it—join the community of locals who make us their daily ritual."
+      title="Elevated Experiences"
+      description="Discover why La Cantina is synonymous with quality and tradition."
     />
   </div>
 
   <div id="about" data-section="about">
       <MediaAbout
       useInvertedBackground={true}
-      title="A Small Team. A Big Standard."
-      description="At La Cantina, we believe in the magic of simple, honest ingredients. Our family-run approach ensures that every taco and burrito serves a slice of home-made authentic Mexican tradition to the heart of Stroud."
+      title="The La Cantina Story"
+      description={["Born from a passion for authentic Mexican flavors and a commitment to locally sourced ingredients.", "We combine artisan culinary techniques with a warm, welcoming atmosphere to provide an unparalleled dining experience."]}
       imageSrc="http://img.b2bpic.net/free-photo/portrait-smiling-waiter-waitress-standing-counter_1170-611.jpg"
     />
   </div>
@@ -132,30 +82,12 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={false}
       products={[
-        {
-          id: "p1",
-          name: "Classic Burrito",
-          price: "£9.50",
-          variant: "Meat or Veg",
-          imageSrc: "http://img.b2bpic.net/free-photo/mexican-meal_23-2148159762.jpg",
-        },
-        {
-          id: "p2",
-          name: "Street Tacos",
-          price: "£8.00",
-          variant: "Authentic Corn",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-unfolded-burrito_23-2148329128.jpg",
-        },
-        {
-          id: "p3",
-          name: "Crispy Quesadilla",
-          price: "£7.50",
-          variant: "Melted Cheese",
-          imageSrc: "http://img.b2bpic.net/free-photo/tacos-plate-near-vegetables_23-2148132045.jpg",
-        },
+        { id: "p1", name: "Signature Carne Asada", price: "£12.50", variant: "Hand-cut Steak", imageSrc: "http://img.b2bpic.net/free-photo/mexican-meal_23-2148159762.jpg" },
+        { id: "p2", name: "Truffle Infused Tacos", price: "£10.50", variant: "Gourmet", imageSrc: "http://img.b2bpic.net/free-photo/close-up-woman-holding-unfolded-burrito_23-2148329128.jpg" },
+        { id: "p3", name: "Artisan Quesadilla", price: "£9.00", variant: "Local Cheeses", imageSrc: "http://img.b2bpic.net/free-photo/tacos-plate-near-vegetables_23-2148132045.jpg" },
       ]}
-      title="Signature Flavours"
-      description="Crafted from fresh, daily-sourced ingredients. Bold, generous, and prepared exactly the way you like them."
+      title="Culinary Selection"
+      description="Our menu showcases a selection of premium, hand-crafted Mexican classics."
     />
   </div>
 
@@ -165,39 +97,12 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={true}
       metrics={[
-        {
-          id: "m1",
-          value: "4+",
-          title: "Years of Tradition",
-          items: [
-            "Consistent quality",
-            "Local favourite",
-            "Stroud staple",
-          ],
-        },
-        {
-          id: "m2",
-          value: "100%",
-          title: "Fresh Ingredients",
-          items: [
-            "Daily sourced",
-            "No shortcuts",
-            "Hand prepared",
-          ],
-        },
-        {
-          id: "m3",
-          value: "99%",
-          title: "Loyal Customers",
-          items: [
-            "Always returning",
-            "Loved by locals",
-            "Generous portions",
-          ],
-        },
+        { id: "m1", value: "4+ Years", title: "Culinary Excellence", items: ["Consistent quality", "Premium ingredients", "Local favourite"] },
+        { id: "m2", value: "100%", title: "Artisan Crafted", items: ["Daily sourced", "Hand prepared", "Fresh daily"] },
+        { id: "m3", value: "Located", title: "Heart of Stroud", items: ["Central spot", "Easy access", "Community hub"] },
       ]}
-      title="Why You’ll Crave It Again"
-      description="Consistency and quality are the pillars of our kitchen, built by four years of loyal patrons."
+      title="Visit Our Cantina"
+      description="Experience the pinnacle of Mexican luxury right here in Stroud."
     />
   </div>
 
@@ -205,45 +110,9 @@ export default function LandingPage() {
       <FooterBaseCard
       logoText="La Cantina"
       columns={[
-        {
-          title: "Navigate",
-          items: [
-            {
-              label: "Menu",
-              href: "#menu",
-            },
-            {
-              label: "Story",
-              href: "#about",
-            },
-            {
-              label: "Location",
-              href: "#location",
-            },
-          ],
-        },
-        {
-          title: "Social",
-          items: [
-            {
-              label: "Instagram",
-              href: "#",
-            },
-            {
-              label: "Facebook",
-              href: "#",
-            },
-          ],
-        },
-        {
-          title: "Legal",
-          items: [
-            {
-              label: "Privacy Policy",
-              href: "#",
-            },
-          ],
-        },
+        { title: "Navigation", items: [{ label: "Home", href: "#hero" }, { label: "Menu", href: "#menu" }] },
+        { title: "Visit", items: [{ label: "123 High St, Stroud", href: "#metrics" }] },
+        { title: "Connect", items: [{ label: "Instagram", href: "#" }, { label: "Facebook", href: "#" }] },
       ]}
     />
   </div>
