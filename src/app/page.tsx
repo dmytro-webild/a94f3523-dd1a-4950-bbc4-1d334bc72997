@@ -70,7 +70,7 @@ export default function LandingPage() {
       <MediaAbout
       useInvertedBackground={true}
       title="The La Cantina Story"
-      description={["Born from a passion for authentic Mexican flavors and a commitment to locally sourced ingredients.", "We combine artisan culinary techniques with a warm, welcoming atmosphere to provide an unparalleled dining experience."]}
+      description="Born from a passion for authentic Mexican flavors and a commitment to locally sourced ingredients. We combine artisan culinary techniques with a warm, welcoming atmosphere to provide an unparalleled dining experience."
       imageSrc="http://img.b2bpic.net/free-photo/portrait-smiling-waiter-waitress-standing-counter_1170-611.jpg"
     />
   </div>
